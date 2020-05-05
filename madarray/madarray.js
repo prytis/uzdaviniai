@@ -8,11 +8,9 @@ function madArray (a,b) {
     for ( let i = 0; i < b.length; i++){
         cubeSum = cubeSum + b[i]*b[i]*b[i];
     }
-    console.log( squareSum+' '+cubeSum);
     if (squareSum > cubeSum){
         return true;
     } return false;
-console.log( squareSum+' '+cubeSum);
 }
 
 console.log(madArray([4,5,6],[1,2,3,9]));
