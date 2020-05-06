@@ -1,39 +1,33 @@
 "use strict";
 function correctPolishLetters (string) {
-    let newString = string;
- for (let i = 0; i < string.length; i++){   
-    switch (string[i]) {
-    case 'ą' : 
-        newString = newString.replace( /ą/g ,"a");
+    let newString = '';
+ 
+    switch (string.toLowerCase()) {
+    case 'jabroni' : 
+        newString = "Patron Tequila";
         break;
-     case 'ć' : 
-        newString = newString.replace(/ć/g,  "c");
+     case 'school counselor' : 
+        newString = "Anything with Alcohol";
         break;
-    case  'ę' : 
-        newString = newString.replace(/ę/g,  'e');
+    case  'programmer' : 
+        newString = "Hipster Craft Beer";
         break;
-    case    'ł' : 
-        newString = newString.replace(/ł/g,  'l');
+    case    'bike gang member' : 
+        newString = "Moonshine";
         break;
-    case    'ń' : 
-        newString = newString.replace(/ń/g,  'n');
+    case    "politician" : 
+        newString = "Your tax dollars";
         break;
-    case    'ó' : 
-        newString = newString.replace(/ó/g,  'o');
+    case    "rapper" : 
+        newString = "Cristal";
         break;
-    case    'ś' : 
-        newString = newString.replace(/ś/g,  's');
-        break;
-    case    'ź' : 
-        newString =newString.replace(/ź/,  'z');
-        break;
-    case    'ż' : 
-        newString =newString.replace(/ż/,  'z');
+    default:
+        newString = "Beer";
         break;
     };
-    console.log(newString);
-    }
     return newString;
-}
+    }
+    
 
-console.log(correctPolishLetters('Jędrzej Błądziński'))
+
+console.log(correctPolishLetters('JabrOni'))
